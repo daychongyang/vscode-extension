@@ -12,6 +12,17 @@
       "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
       "outFiles": ["${workspaceFolder}/lib/**/*.js"],
       "preLaunchTask": "${defaultBuildTask}"
+    },
+    {
+      "name": "Extension Tests",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "${workspaceFolder}/example/",
+        "${workspaceFolder}/example/index.js",
+        "--extensionDevelopmentPath=${workspaceFolder}/example/"
+      ],
+      "preLaunchTask": "${defaultBuildTask}"
     }
   ]
 }

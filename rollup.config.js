@@ -26,6 +26,11 @@ export default {
     json(),
     typescript({
       tsconfig: path.resolve(__dirname, 'tsconfig.json'),
+      tsconfigOverride: {
+        compilerOptions: {
+          module: 'ESNext',
+        },
+      },
     }),
     commonjs(),
     nodeResolve(),
